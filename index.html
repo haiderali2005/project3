@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="jquery-3.6.3.min.js"></script>
+<link rel="stylesheet" href="./style.css">
+<title>Title</title>
+</head>
+<body>
+  <div class="container justify-content-center d-flex align-content-center align-items-center okk">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="custom-control custom-switch me-2">
+          <input type="checkbox" class="custom-control-switch fa-10x" id="selector">
+          <label for="" class="custom-control-label fw-bold">Dark mode</label>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+<script>
+    $(document).ready(function(){
+        $('#selector').change(function(){
+            $('body').toggleClass('bg-dark');
+            $('.custom-control-label').toggleClass('text-white');
+        })
+    })
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+<script src="jquery-3.6.3.min.js"></script>
+</body>
+</html>
